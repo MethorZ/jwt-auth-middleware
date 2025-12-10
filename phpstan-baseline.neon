@@ -1,0 +1,193 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Parameter \$authenticator of class MethorZ\\JwtAuthMiddleware\\Middleware\\JwtAuthenticationMiddleware constructor expects MethorZ\\JwtAuthMiddleware\\Contract\\JwtAuthenticatorInterface, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Factory/JwtAuthenticationMiddlewareFactory.php
+
+		-
+			message: '#^Parameter \$userLoader of class MethorZ\\JwtAuthMiddleware\\Middleware\\JwtAuthenticationMiddleware constructor expects MethorZ\\JwtAuthMiddleware\\Contract\\UserLoaderInterface\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Factory/JwtAuthenticationMiddlewareFactory.php
+
+		-
+			message: '#^Parameter \$jwtValidator of class MethorZ\\JwtAuthMiddleware\\Service\\JwtAuthenticator constructor expects MethorZ\\JwtAuthMiddleware\\Contract\\JwtValidatorInterface, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Factory/JwtAuthenticatorFactory.php
+
+		-
+			message: '#^Parameter \$tokenExtractor of class MethorZ\\JwtAuthMiddleware\\Service\\JwtAuthenticator constructor expects MethorZ\\JwtAuthMiddleware\\Contract\\TokenExtractorInterface, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Factory/JwtAuthenticatorFactory.php
+
+		-
+			message: '#^Cannot access offset ''algorithm'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Cannot access offset ''audience'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Cannot access offset ''issuer'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Cannot access offset ''jwt_auth'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Cannot access offset ''public_key_path'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Cannot access offset ''secret'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Parameter \#1 \$audience of class Lcobucci\\JWT\\Validation\\Constraint\\PermittedFor constructor expects non\-empty\-string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Parameter \#1 \$contents of static method Lcobucci\\JWT\\Signer\\Key\\InMemory\:\:plainText\(\) expects non\-empty\-string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Parameter \#1 \$contents of static method Lcobucci\\JWT\\Signer\\Key\\InMemory\:\:plainText\(\) expects non\-empty\-string, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Parameter \#1 \$filename of function file_get_contents expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Parameter \#1 \.\.\.\$issuers of class Lcobucci\\JWT\\Validation\\Constraint\\IssuedBy constructor expects non\-empty\-string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Parameter \#2 \.\.\.\$values of function sprintf expects bool\|float\|int\|string\|null, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/Factory/JwtValidatorFactory.php
+
+		-
+			message: '#^Cannot access offset ''header_name'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Factory/TokenExtractorFactory.php
+
+		-
+			message: '#^Cannot access offset ''header_prefix'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Factory/TokenExtractorFactory.php
+
+		-
+			message: '#^Cannot access offset ''jwt_auth'' on mixed\.$#'
+			identifier: offsetAccess.nonOffsetAccessible
+			count: 1
+			path: src/Factory/TokenExtractorFactory.php
+
+		-
+			message: '#^Method MethorZ\\JwtAuthMiddleware\\Factory\\TokenExtractorFactory\:\:getConfig\(\) should return array\<string, string\> but returns array\<string, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Factory/TokenExtractorFactory.php
+
+		-
+			message: '#^Cannot call method getMatchedRoute\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: src/Middleware/JwtAuthenticationMiddleware.php
+
+		-
+			message: '#^Method MethorZ\\JwtAuthMiddleware\\Middleware\\JwtAuthenticationMiddleware\:\:getRequiredScopes\(\) should return array\<string\> but returns array\<mixed, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Middleware/JwtAuthenticationMiddleware.php
+
+		-
+			message: '#^Method MethorZ\\JwtAuthMiddleware\\Service\\JwtAuthenticator\:\:parseScopes\(\) should return array\<string\> but returns array\<mixed, mixed\>\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Service/JwtAuthenticator.php
+
+		-
+			message: '#^Parameter \#1 \$jwt of method Lcobucci\\JWT\\Token\\Parser\:\:parse\(\) expects non\-empty\-string, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Service/JwtAuthenticator.php
+
+		-
+			message: '#^Cannot access property \$id on mixed\.$#'
+			identifier: property.nonObject
+			count: 1
+			path: tests/Unit/Middleware/JwtAuthenticationMiddlewareTest.php
+
+		-
+			message: '#^Cannot call method get\(\) on mixed\.$#'
+			identifier: method.nonObject
+			count: 1
+			path: tests/Unit/Middleware/JwtAuthenticationMiddlewareTest.php
+
+		-
+			message: '#^Method MethorZ\\JwtAuthMiddleware\\Tests\\Unit\\Middleware\\JwtAuthenticationMiddlewareTest\:\:createValidToken\(\) should return Lcobucci\\JWT\\Token\\Plain but returns Lcobucci\\JWT\\UnencryptedToken\.$#'
+			identifier: return.type
+			count: 1
+			path: tests/Unit/Middleware/JwtAuthenticationMiddlewareTest.php
+
+		-
+			message: '#^Call to method PHPUnit\\Framework\\Assert\:\:assertTrue\(\) with true will always evaluate to true\.$#'
+			identifier: method.alreadyNarrowedType
+			count: 3
+			path: tests/Unit/Service/JwtAuthenticatorTest.php
+
+		-
+			message: '#^Method MethorZ\\JwtAuthMiddleware\\Tests\\Unit\\Service\\JwtAuthenticatorTest\:\:createTokenWithScopes\(\) should return Lcobucci\\JWT\\Token\\Plain but returns Lcobucci\\JWT\\UnencryptedToken\.$#'
+			identifier: return.type
+			count: 1
+			path: tests/Unit/Service/JwtAuthenticatorTest.php
+
+		-
+			message: '#^Method MethorZ\\JwtAuthMiddleware\\Tests\\Unit\\Service\\JwtAuthenticatorTest\:\:createValidToken\(\) should return Lcobucci\\JWT\\Token\\Plain but returns Lcobucci\\JWT\\UnencryptedToken\.$#'
+			identifier: return.type
+			count: 1
+			path: tests/Unit/Service/JwtAuthenticatorTest.php
+
+		-
+			message: '#^Call to method PHPUnit\\Framework\\Assert\:\:assertTrue\(\) with true will always evaluate to true\.$#'
+			identifier: method.alreadyNarrowedType
+			count: 1
+			path: tests/Unit/Service/JwtValidatorTest.php
+
+		-
+			message: '#^Parameter \#1 \$token of method MethorZ\\JwtAuthMiddleware\\Service\\JwtValidator\:\:validate\(\) expects Lcobucci\\JWT\\Token\\Plain, Lcobucci\\JWT\\UnencryptedToken given\.$#'
+			identifier: argument.type
+			count: 3
+			path: tests/Unit/Service/JwtValidatorTest.php

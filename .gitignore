@@ -1,0 +1,19 @@
+# Composer
+/vendor/
+
+# PHPUnit
+.phpunit.cache/
+/coverage/
+clover.xml
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+

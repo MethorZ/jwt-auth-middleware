@@ -1,5 +1,11 @@
 # JWT Authentication Middleware
 
+[![CI](https://github.com/methorz/jwt-auth-middleware/actions/workflows/ci.yml/badge.svg)](https://github.com/methorz/jwt-auth-middleware/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/methorz/jwt-auth-middleware/branch/main/graph/badge.svg)](https://codecov.io/gh/methorz/jwt-auth-middleware)
+[![PHPStan](https://img.shields.io/badge/PHPStan-level%20max-brightgreen.svg?style=flat)](https://phpstan.org/)
+[![PHP Version](https://img.shields.io/badge/php-%5E8.2-blue)](https://www.php.net/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 PSR-15 JWT authentication middleware with **zero-config approach**. Just add your JWT secret and you're ready to go!
 
 ## Features

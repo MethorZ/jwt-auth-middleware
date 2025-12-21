@@ -25,37 +25,7 @@ parameters:
 			path: src/Factory/JwtAuthenticatorFactory.php
 
 		-
-			message: '#^Cannot access offset ''algorithm'' on mixed\.$#'
-			identifier: offsetAccess.nonOffsetAccessible
-			count: 1
-			path: src/Factory/JwtValidatorFactory.php
-
-		-
-			message: '#^Cannot access offset ''audience'' on mixed\.$#'
-			identifier: offsetAccess.nonOffsetAccessible
-			count: 1
-			path: src/Factory/JwtValidatorFactory.php
-
-		-
-			message: '#^Cannot access offset ''issuer'' on mixed\.$#'
-			identifier: offsetAccess.nonOffsetAccessible
-			count: 1
-			path: src/Factory/JwtValidatorFactory.php
-
-		-
 			message: '#^Cannot access offset ''jwt_auth'' on mixed\.$#'
-			identifier: offsetAccess.nonOffsetAccessible
-			count: 1
-			path: src/Factory/JwtValidatorFactory.php
-
-		-
-			message: '#^Cannot access offset ''public_key_path'' on mixed\.$#'
-			identifier: offsetAccess.nonOffsetAccessible
-			count: 1
-			path: src/Factory/JwtValidatorFactory.php
-
-		-
-			message: '#^Cannot access offset ''secret'' on mixed\.$#'
 			identifier: offsetAccess.nonOffsetAccessible
 			count: 1
 			path: src/Factory/JwtValidatorFactory.php

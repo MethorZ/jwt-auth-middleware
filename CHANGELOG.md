@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.1] - 2026-10-22
+
+### Fixed
+- Requests that match no route no longer fail with "Call to a member function getOptions() on false". `RouteResult::getMatchedRoute()` returns `false` when routing fails; the middleware now passes such requests through so the application can answer 404/405.
+
 ## [1.2.0] - 2026-10-22
 
 ### Changed

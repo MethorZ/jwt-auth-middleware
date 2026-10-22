@@ -91,12 +91,6 @@ parameters:
 			path: src/Factory/TokenExtractorFactory.php
 
 		-
-			message: '#^Cannot call method getMatchedRoute\(\) on mixed\.$#'
-			identifier: method.nonObject
-			count: 1
-			path: src/Middleware/JwtAuthenticationMiddleware.php
-
-		-
 			message: '#^Method MethorZ\\JwtAuthMiddleware\\Middleware\\JwtAuthenticationMiddleware\:\:getRequiredScopes\(\) should return array\<string\> but returns array\<mixed, mixed\>\.$#'
 			identifier: return.type
 			count: 1

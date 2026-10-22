@@ -70,19 +70,20 @@ final readonly class JwtAuthenticationMiddleware implements MiddlewareInterface
         // Mezzio stores route options in the RouteResult attribute
         $routeResult = $request->getAttribute('Mezzio\Router\RouteResult');
 
-        if ($routeResult === null) {
+        if (! is_object($routeResult) || ! method_exists($routeResult, 'getMatchedRoute')) {
             return [];
         }
 
-        // Access matchedRoute and its options
+        // RouteResult::getMatchedRoute() returns false when routing failed
         $matchedRoute = $routeResult->getMatchedRoute();
-        if ($matchedRoute === null) {
+        if (! is_object($matchedRoute) || ! method_exists($matchedRoute, 'getOptions')) {
             return [];
         }
 
         $options = $matchedRoute->getOptions();
+        $auth = is_array($options) ? ($options['auth'] ?? []) : [];
 
-        return $options['auth'] ?? [];
+        return is_array($auth) ? $auth : [];
     }
 
     /**

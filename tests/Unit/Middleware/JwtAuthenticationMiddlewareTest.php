@@ -36,6 +36,22 @@ final class JwtAuthenticationMiddlewareTest extends TestCase
         $this->assertSame(200, $response->getStatusCode());
     }
 
+    public function testProcessSkipsAuthenticationWhenNoRouteMatched(): void
+    {
+        $routeResult = new class {
+            public function getMatchedRoute(): false
+            {
+                return false;
+            }
+        };
+        $request = (new ServerRequest())->withAttribute('Mezzio\Router\RouteResult', $routeResult);
+        $handler = $this->createHandler();
+
+        $response = $this->middleware->process($request, $handler);
+
+        $this->assertSame(200, $response->getStatusCode());
+    }
+
     public function testProcessAuthenticatesWhenRequired(): void
     {
         $token = $this->createValidToken();

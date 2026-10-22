@@ -84,7 +84,7 @@ final class JwtAuthenticationMiddlewareTest extends TestCase
         $request = $this->createAuthenticatedRequest($token->toString());
         $request = $this->setRouteAuthRequired($request, true);
 
-        $userLoader = $this->createMock(UserLoaderInterface::class);
+        $userLoader = $this->createStub(UserLoaderInterface::class);
         $userLoader->method('loadUser')->willReturn((object) ['id' => 'user123']);
 
         $tokenExtractor = new TokenExtractor();

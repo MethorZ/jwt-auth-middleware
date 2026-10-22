@@ -3,7 +3,7 @@
 [![CI](https://github.com/methorz/jwt-auth-middleware/actions/workflows/ci.yml/badge.svg)](https://github.com/methorz/jwt-auth-middleware/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/methorz/jwt-auth-middleware/branch/main/graph/badge.svg)](https://codecov.io/gh/methorz/jwt-auth-middleware)
 [![PHPStan](https://img.shields.io/badge/PHPStan-level%20max-brightgreen.svg?style=flat)](https://phpstan.org/)
-[![PHP Version](https://img.shields.io/badge/php-%5E8.2-blue)](https://www.php.net/)
+[![PHP Version](https://img.shields.io/badge/php-~8.4.27%20%7C%7C%20~8.5.12-blue)](https://www.php.net/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 PSR-15 JWT authentication middleware with **zero-config approach**. Just add your JWT secret and you're ready to go!
@@ -257,9 +257,9 @@ composer check         # All checks
 
 ## Requirements
 
-- PHP 8.2 or higher
+- PHP 8.4 (>= 8.4.27) or PHP 8.5 (>= 8.5.12)
 - PSR-15 compatible framework
-- lcobucci/jwt ^5.4
+- lcobucci/jwt ^5.6
 
 ## License
 
